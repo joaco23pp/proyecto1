@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Charcuteria majo</title>
+    <link rel="shortcut icon" href="img/Charcuteria logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <!--abro header-->
+    <header class="container">
+        <div class="buscar">
+            <input type="text" placeholder="buscar producto...">
+            <button>&#128269;</button>
+            <div class="btn"></div>
+        </div>
+        <div>
+            <img src="img/Charcuteria logo.png" alt="logo" class="logo">
+        </div>
+        <div class='paginas'></div>
+        <nav class="nav container" id="nav">
+            <ul class="nav__links">
+                <li class="nav__item">
+                    <a href="pages/productos.html" class="nav__link">productos</a>
+                </li>
+                <li class="nav__item">
+                    <a href="pages/nosotros.html" class="nav__link">nosotros</a>
+                </li>
+                <li class="nav__item">
+                    <a href="pages/ingresar.html" class="nav__link">ingresar</a>
+                </li>
+                <div class="carrito">
+                    <li class="nav__item">
+                        <figure>
+                            <a href="pages/carrito.html" class="nav__link">
+                                <img src="img/icons8-carrito-de-la-compra-cargado-50.png" alt="carrito" class="carrito">
+                            </a>
+                        </figure>
+                    </li>
+                </div>
+            </ul>
+            <a href="#nav" class="nav__hamburguer">
+                <img src="assets/menu.svg" class="nav__icon">
+            </a>
+            <a href="#" class="nav__close">
+                <img src="assets/close.svg" class="nav__icon">
+            </a>
+        </nav>
+    </header>
+    <!--cierro header-->
+    <!--abro main-->
+    <main class="main-index">
+        <div class="carousel">
+            <div class="destacados">
+                <h2>¡nuestros destacados!</h2>
+            </div>
+            <div class="carrusel-list" id="carrusel-list">
+                <button class="carrusel-arrow carrusel-prev" id="button-prev" data-button="button-prev"
+                    onclick="app.processingButton(event)">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-left"
+                        class="svg-inline--fa fa-chevron-left fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 320 512">
+                        <path fill="currentColor"
+                            d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z">
+                        </path>
+                    </svg>
+                </button>
+                <div class="carrusel-track" id="track">
+                    <div class="carrusel">
+                        <div>
+                            <a href="img/buti.jpg">
+                                <picture>
+                                    <img src="img/buti.jpg" alt="imagen">
+                                </picture>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="carrusel">
+                        <div>
+                            <a href="img/cantimpalo.jpg">
+                                <picture>
+                                    <img src="img/cantimpalo.jpg" alt="imagen">
+                                </picture>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="carrusel">
+                        <div>
+                            <a href="img/chori.jpg">
+                                <picture>
+                                    <img src="img/chori.jpg" alt="imagen">
+                                </picture>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="carrusel">
+                        <div>
+                            <a href="img/matambre.jpg">
+                                <picture>
+                                    <img src="img/matambre.jpg" alt="imagen">
+                                </picture>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="carrusel">
+                        <div>
+                            <a href="img/morcilla.jpg">
+                                <picture>
+                                    <img src="img/morcilla.jpg" alt="imagen">
+                                </picture>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="carrusel">
+                        <div>
+                            <a href="img/muslo.jpg">
+                                <picture>
+                                    <img src="img/muslo.jpg" alt="imagen">
+                                </picture>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="carrusel">
+                        <div>
+                            <a href="img/chori.jpg">
+                                <picture>
+                                    <img src="img/chori.jpg" alt="imagen">
+                                </picture>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <button class="carrusel-arrow carrusel-next" id="button-next" data-button="button-next"
+                    onclick="app.processingButton(event)">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right"
+                        class="svg-inline--fa fa-chevron-right fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 320 512">
+                        <path fill="currentColor"
+                            d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </main>
+    <!--comienzo del footer-->
+    <footer class="pie-de-pagina">
+        <div class="derechos">
+            <small>&COPY; 2023 todos los derechos reservados</small>
+        </div>
+        <div class="iconos">
+            <div>
+                <figure class="icones">
+                    <a href="https://www.whatsapp.com/">
+                        <img src="img/icons8-whatsapp-48.png" alt="icono whatsapp">
+                    </a>
+                </figure>
+            </div>
+            <div>
+                <figure class="icones">
+                    <a href="https://www.facebook.com/?locale=es_LA">
+                        <img src="img/icons8-facebook-nuevo-48.png" alt="icono facebook">
+                    </a>
+                </figure>
+            </div>
+            <div>
+                <figure class="icones">
+                    <a href="https://www.instagram.com/">
+                        <img src="img/icons8-instagram-48.png" alt="icono instagram">
+                    </a>
+                </figure>
+            </div>
+        </div>
+    </footer>
+    <!--fin del footer-->
+</body>
+
+</html>
