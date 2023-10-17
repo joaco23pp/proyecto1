@@ -1,0 +1,30 @@
+/*css-productos*/
+.informacion-principal{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15;
+}
+.informacion-principal .precio{
+    font-size: 20px;
+    font-weight: 500;
+}
+.informacion-principal .precio span{
+    font-size: 17px;
+    font-weight: 300;
+}
+.informacion-principal button{
+    background-color: #263143;
+    width: 100px;
+    height: 35;
+    border-radius: 10px;
+    border: none;
+
+    font-size: 17px;
+    font-weight: 300;
+    cursor: pointer;
+}
+.informacion-principal button:hover{
+    background-color: #2d4263;
+}

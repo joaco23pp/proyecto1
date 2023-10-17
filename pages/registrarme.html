@@ -4,9 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>charcuteria majo</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="shortcut icon" href="../img/Charcuteria logo.png" type="image/x-icon">
+    <title>REGISTRO | CHARCUTERIA MAJO</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <meta name="description" content="crea un usuario, para recibir novedades y beneficios increibles">
+    <meta name="keywords"  content="carne,pollo,asado,productos porcinos,domicilio,vaca,descuentos">
+    <link rel="shortcut icon" href="../assets/img/Charcuteria logo.png" type="image/x-icon">
 </head>
 
 <body>
@@ -18,7 +20,7 @@
             <div class="btn"></div>
         </div>
         <div>
-            <img src="../img/Charcuteria logo.png" alt="logo" class="logo">
+            <img src="../assets/img/Charcuteria logo.png" alt="logo" class="logo">
         </div>
         <div class='paginas'></div>
         <nav class="nav container" id="nav">
@@ -36,95 +38,109 @@
                     <li class="nav__item">
                         <figure>
                             <a href="../pages/carrito.html" class="nav__link">
-                                <img src="../img/icons8-carrito-de-la-compra-cargado-50.png" alt="carrito" class="carrito">
+                                <img src="../assets/img/icons8-carrito-de-la-compra-cargado-50.png" alt="carrito"
+                                    class="carrito">
                             </a>
                         </figure>
                     </li>
                 </div>
             </ul>
             <a href="#nav" class="nav__hamburguer">
-                <img src="../assets/menu.svg" class="nav__icon">
+                <img src="../assets/img/menu.svg" class="nav__icon">
             </a>
             <a href="#" class="nav__close">
-                <img src="../assets/close.svg" class="nav__icon">
+                <img src="../assets/img/close.svg" class="nav__icon">
             </a>
         </nav>
     </header>
     <!--comienzo del main-->
     <main>
         <p>
-        <h1>registro de usuario</h1>
+            <h1>registro de usuario</h1>
         </p>
-        <p>
-        <h3>usuario y clave</h3>
-        </p>
+        <div class="datos">
+            <p>
+                <h3>usuario y clave</h3>
+            </p>
+        </div>
         <!--se que no hay q usar tantos nav pero no se otra forma-->
-        <nav>
-            <label for="email">e-mails</label>
-            <input type="email">
-        </nav>
-        <nav><label for="password">clave</label>
-            <input type="password">
-        </nav>
-        <nav><label for="password">repita clave</label>
-            <input type="password">
-        </nav>
-        <p>
-        <h3>datos</h3>
-        </p>
-        <nav>
-            <label for="name">nombres</label>
-            <input type="text">
-        </nav>
-        <nav><label for="name">apellidos</label>
-            <input type="text">
-        </nav>
-        <nav><label for="tel">celular</label>
-            <input type="tel">
-        </nav>
-        <nav><label for="text"></label>
-            <input type="text">
-        </nav>
-        <p>
-        <h3>direccion(posibles envios)</h3>
-        </p>
-        <nav>
-            <label for="text">direccion</label>
-            <input type="text">
-        </nav>
-        <nav><label for="text">barrio</label>
-            <input type="text">
-        </nav>
-        <button type="submit">confirmar</button>
+        <div class="usuario">
+            <nav>
+                <label for="email">e-mails</label>
+                <input type="email">
+            </nav>
+            <nav><label for="password">clave*</label>
+                <input type="password">
+            </nav>
+            <nav><label for="password">repita clave</label>
+                <input type="password">
+            </nav>
+        </div>
+        <div class="datos">
+            <p>
+                <h3>datos</h3>
+            </p>
+        </div>
+        <div class="usuario">
+            <nav>
+                <label for="name">nombres</label>
+                <input type="text">
+            </nav>
+            <nav><label for="name">apellidos</label>
+                <input type="text">
+            </nav>
+            <nav><label for="tel">celular</label>
+                <input type="tel">
+            </nav>
+        </div>
+        <div class="datos">
+            <p>
+                <h3>direccion(posibles envios)</h3>
+            </p>
+        </div>
+        <div class="usuario">
+            <nav>
+                <label for="text">direccion</label>
+                <input type="text">
+            </nav>
+            <nav><label for="text">barrio</label>
+                <input type="text">
+            </nav>
+        </div>
+        <div class="e-btn">
+            <button type="submit">confirmar</button>
+        </div>
     </main>
     <!--comienzo del footer-->
     <footer class="pie-de-pagina">
         <div class="derechos">
             <small>&COPY; 2023 todos los derechos reservados</small>
         </div>
-        <div class="iconos">
-            <div>
-                <figure>
-                    <a href="https://www.whatsapp.com/">
-                        <img src="../img/icons8-whatsapp-48.png" alt="icono whatsapp">
-                    </a>
-                </figure>
+            <div class="copy">&copy;</div >
+                <div class="iconos">
+                    <div>
+                        <figure class="icones">
+                            <a href="https://www.whatsapp.com/">
+                                <img src="../assets/img/icons8-whatsapp-48.png" alt="icono whatsapp">
+                            </a>
+                        </figure>
+                    </div>
+                    <div>
+                        <figure class="icones">
+                            <a href="https://www.facebook.com/?locale=es_LA">
+                                <img src="../assets/img/icons8-facebook-nuevo-48.png" alt="icono facebook">
+                            </a>
+                        </figure>
+                    </div>
+                    <div>
+                        <figure class="icones">
+                            <a href="https://www.instagram.com/">
+                                <img src="../assets/img/icons8-instagram-48.png" alt="icono instagram">
+                            </a>
+                        </figure>
+                    </div>
+                </div>
             </div>
-            <div>
-                <figure>
-                    <a href="https://www.facebook.com/?locale=es_LA">
-                        <img src="../img/icons8-facebook-nuevo-48.png" alt="icono facebook">
-                    </a>
-                </figure>
-            </div>
-            <div>
-                <figure>
-                    <a href="https://www.instagram.com/">
-                        <img src="../img/icons8-instagram-48.png" alt="icono instagram">
-                    </a>
-                </figure>
-            </div>
-        </div>
     </footer>
     <!--fin del footer-->
 </body>

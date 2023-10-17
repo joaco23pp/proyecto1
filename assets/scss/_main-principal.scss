@@ -1,0 +1,63 @@
+/* main */
+.body-inicio{
+  background-color: rgba(193, 173, 173, 0.719);
+  padding-top: 80px;
+  margin: 0;
+  padding: 10px;
+  box-sizing: border-box;
+  color: rgb(229, 229, 229);
+}
+.h1-carrito{
+  text-align: center;
+  margin: 30px 0px;
+}
+.img-inicio{
+  width: 320px;
+  height: 340px;
+  object-fit: cover;
+  border-radius: 20px 20px 0px 0px;
+}
+.contenedor-inicio{
+  display: inline-flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-bottom: 20px;
+}
+.contenedor-inicio>div{
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0,75);
+  background-color: #2d4263;
+  border-radius: 20px;
+}
+.contenedor-inicio>div:hover{
+  background-color: #11294d;
+}
+.informacion{
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15;
+}
+.informacion .precio{
+  font-size: 20px;
+  font-weight: 500;
+}
+.informacion .precio span{
+  font-size: 17px;
+  font-weight: 300;
+}
+.informacion button{
+  background-color: #263143;
+  width: 100px;
+  height: 35;
+  border-radius: 10px;
+  border: none;
+
+  font-size: 17px;
+  font-weight: 300;
+  cursor: pointer;
+}
+.informacion button:hover{
+  background-color: #2d4263;
+}
