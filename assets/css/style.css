@@ -1,6 +1,6 @@
 /*header*/
 header {
-  background:linear-gradient(45deg,white,skyblue) ;
+  background: linear-gradient(rgb(196, 193, 193), skyblue);
   height: 50px;
   z-index: 3;
   padding: 20px 50px;
@@ -9,36 +9,30 @@ header {
   align-items: center;
   border: 1px solid;
   color: black;
-  .container{
-    margin: 0 auto;
-    width: 92%;
-    max-width: 1200px;
-    overflow: hidden;
-  }
-  .buscar {
-    width: 1000px;
-  }
-  .carrito {
-    display: flex;
-    height: 30px;
-    width: 100px;
-    align-items: center;
-    justify-content: center;
-    height: 25px;
-    width: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .logo {
-    height: 90px;
-    padding: 5px;
-  }
-  
 }
 header nav ul li a:hover {
   color: rgb(30, 29, 29);
 }
+
+.container {
+  margin: 0 auto;
+  width: 92%;
+  max-width: 1200px;
+  overflow: hidden;
+}
+
+.buscar {
+  width: 1000px;
+}
+
+.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2));
+  background-size: cover;
+  min-height: 500px;
+  height: 100vh;
+  color: #fff;
+}
+
 .nav {
   --state-close:scale(0);
   --state-hamburguer:scale(1);
@@ -54,13 +48,13 @@ header nav ul li a:hover {
   --state-close:scale(1);
   --state-hamburguer:scale(0);
 }
+
 .nav__hamburguer, .nav__close {
   cursor: pointer;
   grid-column: -2/-1;
   grid-row: 1/2;
   transition: 0.4s transform;
 }
-
 
 .nav__hamburguer {
   transform: var(--state-hamburguer);
@@ -101,114 +95,127 @@ header nav ul li a:hover {
   letter-spacing: 2px;
 }
 
+.carrito {
+  height: 15px;
+  width: 100px;
+  height: 25px;
+  width: 50px;
+}
+
+.logo {
+  height: 80px;
+  padding: 5px;
+}
+
 /* main */
-.body-inicio{
-  background:linear-gradient(rgb(206, 202, 202),rgb(59, 58, 58));
+.body-inicio {
+  background: -webkit-linear-gradient(white, rgb(97, 95, 95));
   padding-top: 80px;
   margin: 0;
   padding: 10px;
   box-sizing: border-box;
   color: rgb(229, 229, 229);
 }
-.h1-carrito{
+
+.h1-carrito {
   text-align: center;
   margin: 30px 0px;
 }
-.img-inicio{
+
+.img-inicio {
   width: 320px;
   height: 340px;
   object-fit: cover;
   border-radius: 20px 20px 0px 0px;
 }
-.destacados{
-  color: #050505;
-}
 
-.contenedor-inicio{
+.contenedor-inicio {
   display: inline-flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 5px;
   margin-bottom: 20px;
 }
-.contenedor-inicio>div{
-  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0,75);
+
+.contenedor-inicio > div {
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
   background-color: #2d4263;
   border-radius: 20px;
 }
-.contenedor-inicio>div:hover{
+
+.contenedor-inicio > div:hover {
   background-color: #11294d;
 }
-.informacion{
+
+.informacion {
   height: 150px;
   display: flex;
   justify-content: center;
   flex-direction: column;
   gap: 15;
 }
-.informacion .precio{
+
+.informacion .precio {
   font-size: 20px;
   font-weight: 500;
 }
-.informacion .precio span{
+
+.informacion .precio span {
   font-size: 17px;
   font-weight: 300;
 }
-.informacion button{
+
+.informacion button {
   background-color: #263143;
   width: 100px;
   height: 35;
   border-radius: 10px;
   border: none;
-
   font-size: 17px;
   font-weight: 300;
   cursor: pointer;
 }
-.informacion button:hover{
+
+.informacion button:hover {
   background-color: #2d4263;
+}
+
+.destacados {
+  color: black;
 }
 
 /*footer*/
 footer {
-  background-color: rgb(218, 210, 210);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background: -webkit-linear-gradient(rgb(142, 140, 140), rgb(101, 100, 100));
   width: 100%;
   height: 50px;
 }
+
 .copy {
   display: none;
 }
+
 .derechos {
-  display:flex;
-  align-items: center;
-  justify-content: center;
-  width: 5000px;
-  height: 500px;
+  width: 50000px;
+  height: 50px;
   color: #050505;
 }
+
 .iconos {
-  display: flex;
-  width: 450px;
-  align-items: center;
-  justify-content: center;
+  width: 4500px;
 }
 
 .icones {
   display: flex;
   width: 10px;
+  justify-content: center;
 }
 
 /*header-ingresar*/
 .carrito-ingresar {
   height: 30px;
-  width: 40px;
+  width: 45px;
   margin: 70px 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .logo-ingresar {
@@ -250,9 +257,6 @@ footer {
 }
 
 .contrasenia-ingresar {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   height: 2px;
   width: 1080px;
   padding: 10px 4px;
@@ -260,9 +264,6 @@ footer {
 }
 
 .contrasenia-ingresar-1 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   height: 2px;
   width: 1200px;
   padding: 10px 4px;
@@ -270,30 +271,21 @@ footer {
 }
 
 .btn-ingresar {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 20px;
+  height: 15px;
   width: 1190px;
   padding: 50px 4px;
   margin: 20px;
 }
 
-.soy-nuevo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 20px;
-  width: 1195px;
+.soy-nuevo-ingresar {
+  height: 1px;
+  width: 1190px;
   padding: 30px 4px;
   margin: 20px;
 }
 
 .registro {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 20px;
+  height: 10px;
   width: 1200px;
   padding: 10px 4px;
   margin: 20px;
@@ -303,26 +295,30 @@ footer {
 /*footer-ingresar*/
 .iconos-ingresar {
   display: flex;
-  width: 30px;
-  height: 100px;
-  align-items: center;
-  justify-content: center;
+  width: 200px;
+  height: 50px;
 }
 
 .icono-w {
   display: flex;
+  justify-content: right;
+  width: 450px;
+  height: 40px;
+}
+
+.icono-f {
+  display: flex;
   justify-content: center;
-  width: 500px;
+  width: 100px;
   height: 50px;
 }
 
-/*main-nosotros*/
-.empresa {
+.icono-i {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 40px;
 }
 
+/*main-nosotros*/
 .mapas {
   display: inline;
   align-items: center;
@@ -336,7 +332,38 @@ footer {
 }
 
 /*css-productos*/
+.informacion-principal {
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15;
+}
 
+.informacion-principal .precio {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.informacion-principal .precio span {
+  font-size: 17px;
+  font-weight: 300;
+}
+
+.informacion-principal button {
+  background-color: #263143;
+  width: 100px;
+  height: 35;
+  border-radius: 10px;
+  border: none;
+  font-size: 17px;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.informacion-principal button:hover {
+  background-color: #2d4263;
+}
 
 /*css-registrarme*/
 .usuario {
@@ -358,81 +385,93 @@ footer {
   width: 500px;
   justify-content: center;
 }
-  /*main-carrito*/
-.body-carrito{
-    background-color: rgb(223, 222, 226);
-    padding-top: 80px;
-    margin: 0;
-    padding: 10px;
-    box-sizing: border-box;
-    color: aliceblue;
-}
-.h1-carrito{
-    text-align: center;
-    margin: 30px 0px;
-}
-.img-carrito{
-    width: 320px;
-    height: 340px;
-    object-fit: cover;
-    border-radius: 20px 20px 0px 0px;
-}
-.header{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 15%;
-    height: 70px;
-    top: 0;
-    position: fixed;
+
+/*main-carrito*/
+.body-carrito {
+  background: linear-gradient(rgb(189, 186, 186), rgb(37, 39, 40));
+  padding-top: 80px;
+  margin: 0;
+  padding: 10px;
+  box-sizing: border-box;
+  color: aliceblue;
 }
 
-.contenedor-carrito{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 50px;
-    margin-bottom: 20px;
-}
-.contenedor-carrito>div{
-    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0,75);
-    background-color: #2d4263;
-    border-radius: 20px;
-}
-.contenedor-carrito>div:hover{
-    background-color: #11294d;
-}
-.informacion{
-    height: 150px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    gap: 15;
-}
-.informacion .precio{
-    font-size: 20px;
-    font-weight: 500;
-}
-.informacion .precio span{
-    font-size: 17px;
-    font-weight: 300;
-}
-.informacion button{
-    background-color: #263143;
-    width: 100px;
-    height: 35;
-    border-radius: 10px;
-    border: none;
-
-    font-size: 17px;
-    font-weight: 300;
-    cursor: pointer;
-}
-.informacion button:hover{
-    background-color: #2d4263;
+.h1-carrito {
+  text-align: center;
+  margin: 30px 0px;
 }
 
-/*responsive*/
+.img-carrito {
+  width: 320px;
+  height: 340px;
+  object-fit: cover;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.header {
+  gap: 15%;
+  height: 70px;
+  top: 0;
+  position: fixed;
+}
+
+.contenedor-carrito {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  margin-bottom: 20px;
+}
+
+.contenedor-carrito > div {
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  background-color: #2d4263;
+  border-radius: 20px;
+}
+
+.contenedor-carrito > div:hover {
+  background-color: #11294d;
+}
+
+.informacion {
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15;
+}
+
+.informacion .precio {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.informacion .precio span {
+  font-size: 17px;
+  font-weight: 300;
+}
+
+.informacion button {
+  background-color: #263143;
+  width: 100px;
+  height: 35;
+  border-radius: 10px;
+  border: none;
+  font-size: 17px;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.informacion button:hover {
+  background-color: #2d4263;
+}
+
+.carrito, footer, .derechos, .iconos, .carrito-ingresar, .contrasenia-ingresar, .contrasenia-ingresar-1, .btn-ingresar, .soy-nuevo-ingresar, .registro, .empresa, .header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @media (min-width: 481px) {
   .nav {
     --state-hamburguer:scale(0);
@@ -462,23 +501,28 @@ footer {
     font-size: 1rem;
     letter-spacing: none;
   }
-
+  .copy-ingresar {
+    display: none;
+  }
 }
 @media (max-width: 480px) {
+  .container {
+    width: 77%;
+  }
   .buscar {
     display: none;
   }
   .logo {
-    align-items: center;
-    justify-content: center;
     display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .carrusel {
     display: flex;
+    justify-content: center;
+    align-items: center;
     height: 200px;
     width: 70px;
-    align-items: center;
-    justify-content: center;
     margin: 9px 80px;
   }
   .carrusel-track {
@@ -489,8 +533,8 @@ footer {
   }
   .destacados {
     display: flex;
-    font-size: 10px;
-    height: 20px;
+    font-size: 50px;
+    height: 70px;
     justify-content: space-between;
   }
   .main-index, .pie-de-pagina {
@@ -499,8 +543,8 @@ footer {
   }
   .copy {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     width: 900px;
   }
   .derechos {
@@ -520,10 +564,14 @@ footer {
   }
   .todo-main {
     display: flex;
-    height: 400px;
+    height: 300px;
     width: 400px;
     align-items: center;
     justify-content: center;
+  }
+  .e-btn {
+    display: flex;
+    width: 450px;
   }
   /*main-nosotros*/
   .mapas {
@@ -535,9 +583,20 @@ footer {
     padding: 10px;
     align-items: center;
   }
-  .e-btn{
+  /*footer*/
+  .pie-de-pagina {
     display: flex;
-    width: 300px;
+    width: 100%;
+  }
+  .derechos-ingresar {
+    display: none;
+  }
+  .copy-ingresar {
+    display: flex;
+  }
+  .registro-queris {
+    display: grid;
+    width: 100px;
   }
 }
 

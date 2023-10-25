@@ -1,7 +1,7 @@
 /*header*/
 
 header {
-    background-color:$color-headers;
+    background:linear-gradient(rgb(196, 193, 193), skyblue);
     height: 50px;
     z-index: 3;
     padding: 20px 50px;
@@ -10,7 +10,6 @@ header {
     align-items: center;
     border: 1px solid;
     color: black;
-
     nav ul li a:hover {
         color: rgb(30, 29, 29);
     }

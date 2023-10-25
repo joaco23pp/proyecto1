@@ -30,9 +30,7 @@
 }
 
 .contrasenia-ingresar {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @extend %flex-center;
   height: 2px;
   width: 1080px;
   padding: 10px 4px;
@@ -40,9 +38,7 @@
 }
 
 .contrasenia-ingresar-1 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @extend %flex-center;
   height: 2px;
   width: 1200px;
   padding: 10px 4px;
@@ -50,30 +46,24 @@
 }
 
 .btn-ingresar {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 20px;
+  @extend %flex-center;
+  height: 15px;
   width: 1190px;
   padding: 50px 4px;
   margin: 20px;
 }
 
-.soy-nuevo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 20px;
-  width: 1195px;
+.soy-nuevo-ingresar{
+  @extend %flex-center;
+  height: 1px;
+  width: 1190px;
   padding: 30px 4px;
   margin: 20px;
 }
 
 .registro {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 20px;
+  @extend %flex-center;
+  height: 10px;
   width: 1200px;
   padding: 10px 4px;
   margin: 20px;

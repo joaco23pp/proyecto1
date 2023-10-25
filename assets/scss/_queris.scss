@@ -1,4 +1,4 @@
-@media (min-width: 481px) {
+@media (min-width:481px) {
     .nav {
       --state-hamburguer:scale(0);
       --state-menu:translate(0);
@@ -27,22 +27,28 @@
       font-size: 1rem;
       letter-spacing: none;
     }
+    .copy-ingresar{
+      display: none;
+    }
   }
   @media (max-width: 480px) {
+    .container{
+      width: 77%;
+    }
     .buscar {
       display: none;
     }
     .logo {
-      align-items: center;
-      justify-content: center;
       display: flex;
+      justify-content: center;
+      align-items: center;
     }
     .carrusel {
       display: flex;
+      justify-content: center;
+      align-items: center;
       height: 200px;
       width: 70px;
-      align-items: center;
-      justify-content: center;
       margin: 9px 80px;
     }
     .carrusel-track {
@@ -53,8 +59,8 @@
     }
     .destacados {
       display: flex;
-      font-size: 10px;
-      height: 20px;
+      font-size: 50px;
+      height: 70px;
       justify-content: space-between;
     }
     .main-index, .pie-de-pagina {
@@ -63,8 +69,8 @@
     }
     .copy {
       display: flex;
-      align-items: center;
       justify-content: center;
+      align-items: center;
       width: 900px;
     }
     .derechos {
@@ -84,10 +90,14 @@
     }
     .todo-main {
       display: flex;
-      height: 400px;
+      height: 300px;
       width: 400px;
       align-items: center;
       justify-content: center;
+    }
+    .e-btn{
+      display: flex;
+      width: 450px;
     }
     /*main-nosotros*/
     .mapas {
@@ -98,5 +108,20 @@
       justify-content: center;
       padding: 10px;
       align-items: center;
+    }
+    /*footer*/
+    .pie-de-pagina{
+      display: flex;
+      width: 100%;
+    }
+    .derechos-ingresar{
+      display: none;
+    }
+    .copy-ingresar{
+      display: flex;
+    }
+    .registro-queris{
+      display: grid;
+      width: 100px;
     }
   }

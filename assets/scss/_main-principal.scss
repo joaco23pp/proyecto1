@@ -1,6 +1,6 @@
 /* main */
 .body-inicio{
-  background-color: rgba(193, 173, 173, 0.719);
+  background: -webkit-linear-gradient(white, rgb(97, 95, 95));
   padding-top: 80px;
   margin: 0;
   padding: 10px;
@@ -25,7 +25,7 @@
   margin-bottom: 20px;
 }
 .contenedor-inicio>div{
-  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0,75);
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
   background-color: #2d4263;
   border-radius: 20px;
 }
@@ -60,4 +60,7 @@
 }
 .informacion button:hover{
   background-color: #2d4263;
+}
+.destacados{
+  color: black;
 }
