@@ -12,14 +12,15 @@
   margin: 30px 0px;
 }
 .img-inicio{
-  width: 320px;
-  height: 340px;
+  @extend %flex-center;
+  width: 180px;
+  height: 200px;
+  padding: 1px;
   object-fit: cover;
   border-radius: 20px 20px 0px 0px;
 }
 .contenedor-inicio{
-  display: inline-flex;
-  justify-content: center;
+  @extend %flex-center;
   flex-wrap: wrap;
   gap: 5px;
   margin-bottom: 20px;
@@ -28,6 +29,7 @@
   box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
   background-color: #2d4263;
   border-radius: 20px;
+  margin: 15px;
 }
 .contenedor-inicio>div:hover{
   background-color: #11294d;
@@ -38,6 +40,7 @@
   justify-content: center;
   flex-direction: column;
   gap: 15;
+  padding: 10px;
 }
 .informacion .precio{
   font-size: 20px;

@@ -1,0 +1,30 @@
+.btn-neon1{
+    display: flex;
+    justify-content: center;
+    width: 1210px;
+}
+.btn-neon{
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding: 10px 20px;
+    color: #000000;
+    letter-spacing: 2px;
+    font-size: 15px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.2s;
+    height: 5px;
+    width: 100px;
+}
+.btn-neon:hover{
+    background: #99e9ff;
+    box-shadow: 0 0 10px #000000, 0 0 20px #000000,0 0 40px #ffffff;
+    transition-delay: 50ms;
+    border:solid #000000;
+}
+.btn-neon span{
+    position: absolute;
+    display: block;
+}

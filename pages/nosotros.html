@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../assets/img/Charcuteria logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../assets/img/Charcuterialogo.png" type="image/x-icon">
     <title>NOSOTROS | CHARCUTERIA MAJO</title>
     <meta name="description" content="aqui podras conocer un poco mas de nosotros.">
     <meta name="keywords"  content="carne,pollo,asado,productos porcinos,domicilio,vaca,descuentos">
@@ -15,24 +15,30 @@
     <!--abro header-->
     <header class="container">
         <div class="buscar">
-            <input type="text" placeholder="buscar producto...">
+            <input type="text" placeholder="Buscar producto...">
             <button>&#128269;</button>
             <div class="btn"></div>
         </div>
         <div>
-            <img src="../assets/img/Charcuteria logo.png" alt="logo" class="logo">
+            <li class="nav__item">
+                <figure>
+                    <a href="../index.html">
+                        <img src="../assets/img/Charcuterialogo.png" alt="logo" class="logo">
+                    </a>
+                </figure>
+            </li>
         </div>
         <div class='paginas'></div>
         <nav class="nav container" id="nav">
             <ul class="nav__links">
                 <li class="nav__item">
-                    <a href="../pages/productos.html" class="nav__link">productos</a>
+                    <a href="../pages/productos.html" class="nav__link">Productos</a>
                 </li>
                 <li class="nav__item">
-                    <a href="../index.html" class="nav__link">inicio</a>
+                    <a href="../pages/nosotros.html" class="nav__link">Nosotros</a>
                 </li>
                 <li class="nav__item">
-                    <a href="../pages/ingresar.html" class="nav__link">ingresar</a>
+                    <a href="../pages/ingresar.html" class="nav__link">Ingresar</a>
                 </li>
                 <div class="carrito">
                     <li class="nav__item">
@@ -56,17 +62,51 @@
     <main>
         <div class="empresa">
             <p>
-                <h1>nuestra empresa</h1>
+                <h1>Nuestra empresa</h1>
             </p>
         </div>
         <!--aca va historia del negocio-->
         <p>
-        <h3>somos una empresa familiar con mas de 50 anos de trayectoria ,con exelentes productos derivados 100% por la naturaleza y llevados a su hogar con el mayor gusto.</h3>
+        <h3>Somos una empresa familiar con mas de 50 años de trayectoria ,con exelentes productos derivados 100% por la naturaleza y llevados a su hogar con el mayor gusto.</h3>
             </p>
+            <section>
+                <aside>
+                    <aside class="aside-principal">
+                        <div class="container-all">
+                            <div>
+                                <input type="radio" id="1" name="image-slide" hidden/>
+                                <input type="radio" id="2" name="image-slide" hidden/>
+                                <input type="radio" id="3" name="image-slide" hidden/>
+                            </div>
+                            <div class="slide">
+                                <div class="item-slide">
+                                <img src="../assets/img/carro.jpg" class="img-aside">
+                                </div>
+                                <div class="item-slide">
+                                <img src="../assets/img/carro.jpg" class="img-aside">
+                                </div>
+                                <div class="item-slide">
+                                <img src="../assets/img/carro.jpg" class="img-aside">
+                                </div>
+                            </div>
+                            <div class="pagination">
+                                <label class="pagination-item" for="1">
+                                    <img src="../assets/img/carro.jpg" class="img-aside">
+                                </label>
+                                <label class="pagination-item" for="2">
+                                    <img src="../assets/img/carro.jpg" class="img-aside">
+                                </label>
+                                <label class="pagination-item" for="3">
+                                    <img src="../assets/img/carro.jpg" class="img-aside">
+                                </label>
+                            </div>
+                        </div>
+                    </aside>
+                </aside>
+            </section>
             <p>
-                <h4>encontranos ubicados en:</h4>
+                <h3>Encontranos ubicados en:</h3>
             </p>
-            <!--la idea es achicarlos proximamente-->
             <div class="mapas">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3272.702451754619!2d-56.12380522524334!3d-34.888817372853474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f812eca0d0201%3A0xb90096c10c7e70f3!2sMataojo%20%26%20Samuel%20Blixen%2C%2011400%20Montevideo%2C%20Departamento%20de%20Montevideo!5e0!3m2!1ses-419!2suy!4v1694024225847!5m2!1ses-419!2suy"
@@ -99,27 +139,27 @@
     <!--comienzo del footer-->
     <footer class="pie-de-pagina">
         <div class="derechos">
-            <small>&COPY; 2023 todos los derechos reservados</small>
+            <small>&COPY; 2023 Todos los derechos reservados</small>
         </div>
             <div class="copy">&copy;</div >
                 <div class="iconos">
                     <div>
                         <figure class="icones">
-                            <a href="https://www.whatsapp.com/">
+                            <a href="https://www.whatsapp.com/" target="_blank">
                                 <img src="../assets/img/icons8-whatsapp-48.png" alt="icono whatsapp">
                             </a>
                         </figure>
                     </div>
                     <div>
                         <figure class="icones">
-                            <a href="https://www.facebook.com/?locale=es_LA">
+                            <a href="https://www.facebook.com/?locale=es_LA" target="_blank">
                                 <img src="../assets/img/icons8-facebook-nuevo-48.png" alt="icono facebook">
                             </a>
                         </figure>
                     </div>
                     <div>
                         <figure class="icones">
-                            <a href="https://www.instagram.com/">
+                            <a href="https://www.instagram.com/" target="_blank">
                                 <img src="../assets/img/icons8-instagram-48.png" alt="icono instagram">
                             </a>
                         </figure>
