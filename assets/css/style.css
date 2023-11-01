@@ -646,6 +646,28 @@ input[id="3"]:checked ~ .pagination .pagination-item[for="3"] {
   display: block;
 }
 
+.btn-neon2 {
+  width: 1200px;
+  display: flex;
+  justify-content: center;
+}
+
+.btn-neon2 {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding: 10px 20px;
+  color: #000000;
+  letter-spacing: 2px;
+  font-size: 15px;
+  text-decoration: none;
+  overflow: hidden;
+  transition: 0.2s;
+  height: 5px;
+  width: 200px;
+}
+
 .carrito, .img-inicio, .contenedor-inicio, footer, .derechos, .iconos, .emailh1, .contrasenia-ingresar, .contrasenia-ingresar-1, .btn-ingresar, .soy-nuevo-ingresar, .empresa {
   display: flex;
   justify-content: center;
