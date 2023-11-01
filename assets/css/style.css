@@ -686,6 +686,7 @@ input[id="3"]:checked ~ .pagination .pagination-item[for="3"] {
   }
 }
 @media (max-width: 480px) {
+  /*General*/
   .container {
     width: 77%;
   }
@@ -713,7 +714,7 @@ input[id="3"]:checked ~ .pagination .pagination-item[for="3"] {
   }
   .destacados {
     display: flex;
-    font-size: 50px;
+    font-size: 40px;
     height: 70px;
     justify-content: space-between;
   }
