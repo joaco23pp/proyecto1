@@ -38,12 +38,6 @@
     .buscar {
       display: none;
     }
-    .info{
-      font-size: 25px;
-    }
-    .precio{
-      font-size: 10px;
-    }
     .logo {
       display: flex;
       justify-content: center;
@@ -126,7 +120,10 @@
         overflow: auto;
     }
     .main-user-info::-webkit-scrollbar{
-        width: 0;
+      width: 0;
+    }
+    .info{
+      font-size: 20px;
     }
     /*footer*/
     .pie-de-pagina{

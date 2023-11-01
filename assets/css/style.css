@@ -54,6 +54,7 @@ header nav ul li a:hover {
   grid-column: -2/-1;
   grid-row: 1/2;
   transition: 0.4s transform;
+  z-index: 3;
 }
 
 .nav__hamburguer {
@@ -75,13 +76,15 @@ header nav ul li a:hover {
   bottom: 0;
   left: 0;
   right: 0;
-  padding: 0;
+  padding: 10px;
   display: grid;
   align-content: center;
   gap: 2em;
   padding-left: 5%;
   transform: var(--state-menu);
   transition: 0.3s transform;
+  height: 900px;
+  z-index: 3;
 }
 
 .nav__item {
@@ -91,7 +94,7 @@ header nav ul li a:hover {
 .nav__link {
   color: #fff;
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 30px;
   letter-spacing: 2px;
 }
 
@@ -689,12 +692,6 @@ input[id="3"]:checked ~ .pagination .pagination-item[for="3"] {
   .buscar {
     display: none;
   }
-  .info {
-    font-size: 25px;
-  }
-  .precio {
-    font-size: 10px;
-  }
   .logo {
     display: flex;
     justify-content: center;
@@ -778,6 +775,9 @@ input[id="3"]:checked ~ .pagination .pagination-item[for="3"] {
   }
   .main-user-info::-webkit-scrollbar {
     width: 0;
+  }
+  .info {
+    font-size: 20px;
   }
   /*footer*/
   .pie-de-pagina {
