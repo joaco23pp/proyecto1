@@ -1,6 +1,6 @@
 /* main */
 .body-inicio{
-  background: -webkit-linear-gradient(white, rgb(97, 95, 95));
+  background: $color-mains;
   padding-top: 80px;
   margin: 0;
   padding: 10px;
@@ -27,7 +27,7 @@
 }
 .contenedor-inicio>div{
   box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
-  background-color: #2d4263;
+  background-color:$color-targets;
   border-radius: 20px;
   margin: 15px;
 }
@@ -51,12 +51,12 @@
   font-weight: 300;
 }
 .informacion button{
-  background-color: #263143;
+  display: flex;
+  background-color: $color-buttons;
   width: 100px;
   height: 35;
   border-radius: 10px;
   border: none;
-
   font-size: 17px;
   font-weight: 300;
   cursor: pointer;

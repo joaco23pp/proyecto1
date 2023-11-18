@@ -1,22 +1,25 @@
+/*botones-ingresar*/
 .btn-neon1{
     display: flex;
     justify-content: center;
-    width: 1210px;
+    width: 1250px;
 }
 .btn-neon{
     position: relative;
     align-items: center;
     justify-content: center;
     display: flex;
-    padding: 10px 20px;
+    padding: 20px 20px;
     color: #000000;
     letter-spacing: 2px;
     font-size: 15px;
     text-decoration: none;
     overflow: hidden;
     transition: 0.2s;
-    height: 5px;
-    width: 100px;
+    height: 1px;
+    width: 80px;
+    border: outset black;
+    margin: 10px;
 }
 .btn-neon:hover{
     background: #99e9ff;
@@ -28,6 +31,7 @@
     position: absolute;
     display: block;
 }
+/*boton-carrito*/
 .btn-neon2{
     width: 1200px;
     display: flex;
@@ -39,7 +43,7 @@
     justify-content: center;
     display: flex;
     padding: 10px 20px;
-    color: #000000;
+    color: #ffffff;
     letter-spacing: 2px;
     font-size: 15px;
     text-decoration: none;

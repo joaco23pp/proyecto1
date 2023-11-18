@@ -14,8 +14,9 @@
     font-size: 17px;
     font-weight: 300;
 }
-.informacion-principal button{
-    background-color: #263143;
+.informacion button{
+    display: flex;
+    background-color:$color-buttons;
     width: 100px;
     height: 35;
     border-radius: 10px;
@@ -24,6 +25,7 @@
     font-weight: 300;
     cursor: pointer;
 }
-.informacion-principal button:hover{
+.informacion button:hover{
     background-color: #2d4263;
 }
+

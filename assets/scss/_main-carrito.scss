@@ -1,5 +1,5 @@
 .body-carrito{
-    background:linear-gradient(rgb(221, 219, 219), rgb(78, 83, 85));
+    background:$color-mains;
     padding-top: 80px;
     margin: 0;
     padding: 10px;
@@ -27,15 +27,14 @@
 }
 
 .contenedor-carrito{
-    display: flex;
+    @extend %flex-wrap;
     justify-content: center;
-    flex-wrap: wrap;
     gap: 50px;
     margin-bottom: 20px;
 }
 .contenedor-carrito>div{
     box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
-    background-color: #2d4263;
+    background: $color-targets;
     border-radius: 20px;
 }
 .contenedor-carrito>div:hover{
@@ -56,6 +55,7 @@
     font-size: 17px;
     font-weight: 300;
 }
+/*estilo-botones*/
 .informacion button{
     background:linear-gradient(rgb(248, 245, 245), rgb(78, 85, 88));
     width: 100px;

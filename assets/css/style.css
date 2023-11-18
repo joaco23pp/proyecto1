@@ -1,6 +1,11 @@
+/*colores de las tarjetas*/
+/*color de botones de tarjetas*/
+/*color-headers*/
+/*color-footers*/
+/*color-mains*/
 /*header*/
 header {
-  background: linear-gradient(rgb(196, 193, 193), skyblue);
+  background: radial-gradient(rgb(84, 140, 168), rgb(238, 238, 238));
   height: 50px;
   z-index: 3;
   padding: 20px 50px;
@@ -112,7 +117,7 @@ header nav ul li a:hover {
 
 /* main */
 .body-inicio {
-  background: -webkit-linear-gradient(white, rgb(97, 95, 95));
+  background: linear-gradient(rgb(238, 238, 238), rgb(84, 140, 168));
   padding-top: 80px;
   margin: 0;
   padding: 10px;
@@ -141,7 +146,7 @@ header nav ul li a:hover {
 
 .contenedor-inicio > div {
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
-  background-color: #2d4263;
+  background-color: #476072;
   border-radius: 20px;
   margin: 15px;
 }
@@ -170,7 +175,8 @@ header nav ul li a:hover {
 }
 
 .informacion button {
-  background-color: #263143;
+  display: flex;
+  background-color: #548CA8;
   width: 100px;
   height: 35;
   border-radius: 10px;
@@ -190,11 +196,12 @@ header nav ul li a:hover {
 
 /*footer*/
 footer {
-  background: -webkit-linear-gradient(rgb(142, 140, 140), rgb(101, 100, 100));
+  background: -webkit-linear-gradient(#548CA8, #334257);
   width: 100%;
   height: 50px;
   position: absolute;
   bottom: 0;
+  border: solid black 1px;
 }
 
 body {
@@ -225,67 +232,67 @@ body {
 }
 
 /*main-ingresar*/
+.main-ingresar {
+  background: linear-gradient(rgb(238, 238, 238), rgb(84, 140, 168));
+  height: 100%;
+}
+
 .ingresar {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   height: 50px;
-  width: 1150px;
+  width: 1215px;
   padding: 10px 5px;
-  margin: 20px;
 }
 
 .emailh1 {
   height: px;
-  width: 1100px;
+  width: 1130px;
   padding: 8px 4px;
   margin: 0px;
 }
 
 .email {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   height: px;
-  width: 1220px;
+  width: 1250px;
   padding: 4x 2px;
 }
 
 .contrasenia-ingresar {
   height: 2px;
-  width: 1080px;
+  width: 1110px;
   padding: 10px 4px;
   margin: 20px;
 }
 
 .contrasenia-ingresar-1 {
   height: 2px;
-  width: 1170px;
+  width: 1205px;
   padding: 10px 4px;
-  margin: 20px;
-}
-
-.btn-ingresar {
-  height: 15px;
-  width: 1150px;
-  padding: 8px 4px;
   margin: 20px;
 }
 
 .soy-nuevo-ingresar {
   height: 100px;
-  width: 1169px;
+  width: 1205px;
   padding: 8px 4px;
   margin: 10px;
 }
 
 /*main-nosotros*/
+.main-nosotros {
+  background: linear-gradient(rgb(238, 238, 238), rgb(84, 140, 168));
+}
+
+.historia-negocio {
+  padding: 10px;
+}
+
 .mapas {
-  display: inline;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 20px;
-  margin: 30px;
+  padding: 30px;
+  margin: 3px;
+  width: 1200px;
 }
 
 .mapas2 {
@@ -311,8 +318,9 @@ body {
   font-weight: 300;
 }
 
-.informacion-principal button {
-  background-color: #263143;
+.informacion button {
+  display: flex;
+  background-color: #548CA8;
   width: 100px;
   height: 35;
   border-radius: 10px;
@@ -322,18 +330,16 @@ body {
   cursor: pointer;
 }
 
-.informacion-principal button:hover {
+.informacion button:hover {
   background-color: #2d4263;
 }
 
 /*css-registrarme*/
 .main-registrarme {
-  display: flex;
   height: 100vh;
-  justify-content: center;
-  align-items: center;
   background: linear-gradient(rgb(196, 193, 193), rgb(101, 113, 220));
   background-size: cover;
+  padding: 20px;
 }
 
 .container-registrarme {
@@ -357,8 +363,6 @@ body {
 }
 
 .main-user-info {
-  display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   padding: 20px 0;
 }
@@ -368,8 +372,6 @@ body {
 }
 
 .user-input-box {
-  display: flex;
-  flex-wrap: wrap;
   width: 50%;
   padding-bottom: 15px;
 }
@@ -409,7 +411,7 @@ body {
 }
 
 .body-carrito {
-  background: linear-gradient(rgb(221, 219, 219), rgb(78, 83, 85));
+  background: linear-gradient(rgb(238, 238, 238), rgb(84, 140, 168));
   padding-top: 80px;
   margin: 0;
   padding: 10px;
@@ -440,16 +442,14 @@ body {
 }
 
 .contenedor-carrito {
-  display: flex;
   justify-content: center;
-  flex-wrap: wrap;
   gap: 50px;
   margin-bottom: 20px;
 }
 
 .contenedor-carrito > div {
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
-  background-color: #2d4263;
+  background: #476072;
   border-radius: 20px;
 }
 
@@ -475,6 +475,7 @@ body {
   font-weight: 300;
 }
 
+/*estilo-botones*/
 .informacion button {
   background: linear-gradient(rgb(248, 245, 245), rgb(78, 85, 88));
   width: 100px;
@@ -490,10 +491,8 @@ body {
   background-color: #2d4263;
 }
 
+/*todo-slide*/
 .aside-principal {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding: 30px;
 }
 
@@ -533,10 +532,6 @@ body {
   position: absolute;
   bottom: 20px;
   left: 0;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
   width: 100%;
 }
 
@@ -612,10 +607,11 @@ input[id="3"]:checked ~ .pagination .pagination-item[for="3"] {
     transform: translate3d(-200%, 0, 0);
   }
 }
+/*botones-ingresar*/
 .btn-neon1 {
   display: flex;
   justify-content: center;
-  width: 1210px;
+  width: 1250px;
 }
 
 .btn-neon {
@@ -623,15 +619,17 @@ input[id="3"]:checked ~ .pagination .pagination-item[for="3"] {
   align-items: center;
   justify-content: center;
   display: flex;
-  padding: 10px 20px;
+  padding: 20px 20px;
   color: #000000;
   letter-spacing: 2px;
   font-size: 15px;
   text-decoration: none;
   overflow: hidden;
   transition: 0.2s;
-  height: 5px;
-  width: 100px;
+  height: 1px;
+  width: 80px;
+  border: outset black;
+  margin: 10px;
 }
 
 .btn-neon:hover {
@@ -646,6 +644,7 @@ input[id="3"]:checked ~ .pagination .pagination-item[for="3"] {
   display: block;
 }
 
+/*boton-carrito*/
 .btn-neon2 {
   width: 1200px;
   display: flex;
@@ -658,7 +657,7 @@ input[id="3"]:checked ~ .pagination .pagination-item[for="3"] {
   justify-content: center;
   display: flex;
   padding: 10px 20px;
-  color: #000000;
+  color: #ffffff;
   letter-spacing: 2px;
   font-size: 15px;
   text-decoration: none;
@@ -668,10 +667,15 @@ input[id="3"]:checked ~ .pagination .pagination-item[for="3"] {
   width: 200px;
 }
 
-.carrito, .img-inicio, .contenedor-inicio, footer, .derechos, .iconos, .emailh1, .contrasenia-ingresar, .contrasenia-ingresar-1, .btn-ingresar, .soy-nuevo-ingresar, .empresa {
+.carrito, .img-inicio, .contenedor-inicio, footer, .derechos, .iconos, .ingresar, .emailh1, .email, .contrasenia-ingresar, .contrasenia-ingresar-1, .soy-nuevo-ingresar, .empresa, .main-registrarme, .aside-principal, .pagination {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.main-user-info, .user-input-box, .contenedor-carrito, .pagination {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 @media (min-width: 481px) {
@@ -761,25 +765,30 @@ input[id="3"]:checked ~ .pagination .pagination-item[for="3"] {
     align-items: normal;
   }
   /*main-ingresar*/
-  .main-ingresar {
+  .main-ingresar1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 400px;
+    width: 300px;
   }
   .ingresar {
     display: flex;
     width: 290px;
   }
   /*main-nosotros*/
+  .historia-negocio {
+    padding: 10px;
+    margin: 30px;
+  }
   .mapas {
     display: none;
   }
   .mapas2 {
-    display: inline;
+    display: inline-flex;
     justify-content: center;
     padding: 10px;
     align-items: center;
+    width: 400px;
   }
   /*main-registrarme*/
   .container-registrarme {

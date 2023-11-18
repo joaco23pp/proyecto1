@@ -85,25 +85,30 @@
       align-items: normal;
     }
     /*main-ingresar*/
-    .main-ingresar{
+    .main-ingresar1{
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 400px;
+      width: 300px;
     }
     .ingresar{
       display: flex;
       width: 290px;
     }
     /*main-nosotros*/
+    .historia-negocio{
+      padding: 10px;
+      margin: 30px;
+    }
     .mapas {
       display: none;
     }
     .mapas2 {
-      display: inline;
+      display: inline-flex;
       justify-content: center;
       padding: 10px;
       align-items: center;
+      width: 400px;
     }
     /*main-registrarme*/
     .container-registrarme{

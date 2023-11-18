@@ -1,7 +1,6 @@
+/*todo-slide*/
 .aside-principal{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %flex-center;
     padding: 30px;
 }
 .img-aside{
@@ -36,10 +35,8 @@
     position: absolute;
     bottom: 20px;
     left: 0;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+    @extend %flex-center;
+    @extend %flex-wrap;
     width: 100%;
 }
 .pagination-item{
