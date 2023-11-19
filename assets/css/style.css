@@ -771,6 +771,12 @@ input[id="3"]:checked ~ .pagination .pagination-item[for="3"] {
   .main-ingresar {
     width: 100%;
   }
+  .main-ingresar1 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    align-content: center;
+  }
   .ingresar {
     display: flex;
     width: 290px;
