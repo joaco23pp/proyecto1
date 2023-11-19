@@ -111,8 +111,8 @@ header nav ul li a:hover {
 }
 
 .logo {
-  height: 80px;
-  padding: 5px;
+  height: 92px;
+  padding: 1px;
 }
 
 /* main */
@@ -713,6 +713,9 @@ input[id="3"]:checked ~ .pagination .pagination-item[for="3"] {
 }
 @media (max-width: 480px) {
   /*General*/
+  main {
+    width: 106%;
+  }
   .container {
     width: 77%;
   }
@@ -765,17 +768,18 @@ input[id="3"]:checked ~ .pagination .pagination-item[for="3"] {
     align-items: normal;
   }
   /*main-ingresar*/
-  .main-ingresar1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 300px;
+  .main-ingresar {
+    width: 100%;
   }
   .ingresar {
     display: flex;
     width: 290px;
+    height: 250px;
   }
   /*main-nosotros*/
+  .main-nosotros {
+    width: 106%;
+  }
   .historia-negocio {
     padding: 10px;
     margin: 30px;
@@ -788,9 +792,12 @@ input[id="3"]:checked ~ .pagination .pagination-item[for="3"] {
     justify-content: center;
     padding: 10px;
     align-items: center;
-    width: 400px;
+    width: 350px;
   }
   /*main-registrarme*/
+  .main-registrarme {
+    width: 94%;
+  }
   .container-registrarme {
     min-width: 280px;
   }
@@ -811,10 +818,14 @@ input[id="3"]:checked ~ .pagination .pagination-item[for="3"] {
   .info {
     font-size: 20px;
   }
+  /*main-carrito*/
+  .body-carrito {
+    width: 95%;
+  }
   /*footer*/
   .pie-de-pagina {
     display: flex;
-    width: 100%;
+    width: 106%;
   }
   .derechos-ingresar {
     display: none;
